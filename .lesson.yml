@@ -1,0 +1,8 @@
+---
+title: "Launchtails - Forms"
+type: "challenge"
+description: "Upgrade Our Drink Form to allow for richer data"
+visibility: "assign"
+tags: "rails, forms"
+ignore:
+  - "launchtails-forms.md"
