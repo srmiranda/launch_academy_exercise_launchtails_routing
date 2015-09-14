@@ -4754,3 +4754,145 @@ Started GET "/assets/application-7b0fcdfa40208ffc00053de20a565c53.js?body=1" for
 
 
 Started GET "/assets/foundation/foundation.tooltip-5214a0ecffb0be84dc9247c31455ef50.js?body=1" for ::1 at 2015-09-14 17:29:11 -0400
+
+
+Started GET "/featured-drinks" for ::1 at 2015-09-14 17:33:34 -0400
+Processing by FeaturedDrinksController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "drinks" WHERE "drinks"."featured" = 't'
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."featured" = 't'[0m
+  Rendered featured_drinks/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 89ms (Views: 87.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/foundation_and_overrides-d016da085fa479a3edf742674f427586.css?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/scaffolds-107d225f949f4aa35022b73e5fc1861d.css?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/application-556841f7851b7732b4f1c14de3f54d35.css?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation-013a9ecfcbd0d277665f83c66e076e18.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.abide-cecd3b8dfdb9535c145e3160cca57cae.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.accordion-07d483c126d868809345e4abbcfd54a5.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.alert-e54c2d9000574a39e07b2e6ede6ae0f6.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.clearing-b0828edefaad3278cd85c2faf6fd20ef.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.dropdown-c6b22cf8e5474c59dc0bc19e2d290da5.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.interchange-adf4ca4cb9a1f36677701d7d06489ead.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.joyride-7f23c30298ef55f2db505f357bd4a799.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.magellan-8cd3c13f48f6d78fb172bb5200551918.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.offcanvas-0c2112e52f2de840e27058c4912dd869.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.orbit-925ec65dcf6be03dd5c7a1d472845b27.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.reveal-7bd8d9ca180151af16ff7678033f8212.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.slider-66a6fcccc01097ba84b9e9fb84a429ef.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.tab-0d9dd6504af28bc75bdb999fbb120872.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.tooltip-5214a0ecffb0be84dc9247c31455ef50.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.topbar-ba04adaaf787a047a2bc9195842bb938.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation/foundation.equalizer-b93ba11c4146c58dd7d95ba14769e640.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/foundation-cf9c2be01a146b330f05b712f6779903.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/assets/application-7b0fcdfa40208ffc00053de20a565c53.js?body=1" for ::1 at 2015-09-14 17:33:35 -0400
+
+
+Started GET "/drinks/new" for ::1 at 2015-09-14 17:33:40 -0400
+Processing by DrinksController#new as HTML
+  Rendered drinks/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `{:featured=>true}' for #<Drink:0x007ffd9ccbde18>):
+    20:       <%= f.text_area :description %>
+    21: 
+    22:       <%= f.label :featured %>
+    23:       <%= f.check_box :featured => true %></br>
+    24: 
+    25:       ​<%= f.label :category_id %>
+    26:       <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+  app/views/drinks/new.html.erb:23:in `block in _app_views_drinks_new_html_erb___1296278419664168164_70363617016840'
+  app/views/drinks/new.html.erb:15:in `_app_views_drinks_new_html_erb___1296278419664168164_70363617016840'
+
+
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.6ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.2ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (103.8ms)
+
+
+Started GET "/drinks/new" for ::1 at 2015-09-14 17:34:39 -0400
+Processing by DrinksController#new as HTML
+  Rendered drinks/new.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `{:featured=>true}' for #<Drink:0x007ffd9d16ba50>):
+    20:       <%= f.text_area :description %>
+    21: 
+    22:       <%= f.label :featured %>
+    23:       <%= f.check_box featured: true%></br>
+    24: 
+    25:       ​<%= f.label :category_id %>
+    26:       <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+  app/views/drinks/new.html.erb:23:in `block in _app_views_drinks_new_html_erb___1296278419664168164_70363619413480'
+  app/views/drinks/new.html.erb:15:in `_app_views_drinks_new_html_erb___1296278419664168164_70363619413480'
+
+
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.0ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (34.5ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Sasquatch/.gem/ruby/2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (78.0ms)
