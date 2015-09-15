@@ -25,12 +25,12 @@
       ​<%= f.label :category_id %>
       <%= f.collection_select(:category_id, Category.all, :id, :name) %>
 
-      <%= f.radio_button :alcohol_level, "Small", name: "Small" %>
-      <%= f.label "Small" %>
+      <%= f.radio_button :alcohol_level, "Low", name: "Low" %>
+      <%= f.label "Low" %>
       <%= f.radio_button :alcohol_level, "Medium", name: "Medium" %>
       <%= f.label "Medium" %>
-      <%= f.radio_button :alcohol_level, "Large", name: "Large" %>
-      <%= f.label "Medium" %></br>
+      <%= f.radio_button :alcohol_level, "High", name: "High" %>
+      <%= f.label "High" %></br>
 
       <%= f.submit "Add Drink" %>
     <%- end -%>

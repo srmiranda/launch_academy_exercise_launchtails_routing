@@ -13,6 +13,13 @@ class DrinksController < ApplicationController
     end
   end
 
+  def destroy
+    @drink = Drink.find params[:id]
+    @drink.destroy
+    flash[:notice] = 'Drink deleted.'
+    redirect_to '/drinks'
+  end
+
   def index
     @drinks = Drink.all
   end

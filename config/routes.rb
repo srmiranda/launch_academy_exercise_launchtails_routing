@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'homes#index'
   devise_for :users
   resources :drinks, except: [:edit, :update]
-
+  
   get '/featured-drinks', to: 'featured_drinks#index'
 
   delete 'featured-drinks/:id', to: 'featured_drinks#destroy'
